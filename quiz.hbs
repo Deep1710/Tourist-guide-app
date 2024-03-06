@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+       
+
+        .cont1{
+            border: 5px solid lightgray;
+            background-color: #f2f2f2;
+            padding: 10px ;
+            margin: 5px;
+            text-align: center;
+
+        }
+        .box{
+            display: grid;
+           grid-template-columns: 1fr;
+           /* width: 250px;
+            height: 250px;
+            position: absolute;*/
+            padding: 20px;
+            margin: 5px;
+            border: 5px solid lightgray;
+            background-color: #f2f2f2;
+        
+        }
+
+       .big{
+             display: grid;
+            grid-template-columns: auto;
+            border: 3px solid lightgray;
+            background-color: #f2f2f2;
+        }
+       
+    </Style>
+</head>
+<body>
+  <div class="big">
+  {{>navbar}}
+
+    <div class="cont1">
+        <h1>Quiz Time</h1>
+    </div>
+    <div class="cont">
+      <div class="box" id="box1">
+          <p>which is the largest state (in size) in India ?</p>
+        <button onclick="option1()"  id="change1">Uttar Pradesh</button>
+        <p style="text-align:center;">or</p>
+        <button onclick="option2() " id="change2">Rajasthan </button> <br>
+      </div>
+
+      <div class="box" id="box2">
+        <p>which is the smallest state (in size) in India ?</p>
+        <button onclick="option3()"  id="change3">kerala</button>
+        <p style="text-align:center;">or</p>
+        <button onclick="option4() " id="change4">Goa </button>
+      </div>
+
+      <div class="box" id="box3">
+        <p> What is the Capital of India ?</p>
+        <button onclick="option5()"  id="change5">Delhi</button>
+        <p style="text-align:center;">or</p>
+        <button onclick="option6() " id="change6">UP </button>
+      </div>
+
+      <div class="box">
+        <p> Who writen the Nation Anthem of India ?</p>
+        <button onclick="option7()"  id="change7">Munsi Prem Chandra</button>
+        <p style="text-align:center;">or</p>
+        <button onclick="option8() " id="change8"> Raindra Nath Tagore </button>
+      </div>
+
+      <div class="box">
+        <p> How many state in India ?</p>
+        <button onclick="option10()"  id="change10">28</button>
+        <p style="text-align:center;">or</p>
+        <button onclick="option9() " id="change9">29 </button>
+      </div>
+
+      <div class="box">
+        <p>ON which day India celebrate Indepedance day ?</p>
+        <button onclick="option11()"  id="change11">26 jan</button>
+        <p style="text-align:center;">or</p>
+        <button onclick="option12() " id="change12">15 Aug </button>
+      </div>
+
+      <div class="box">
+        <p>Which is the largest day ?</p>
+        <button onclick="option13()"  id="change13">23 Jun</button>
+        <p style="text-align:center;">or</p>
+        <button onclick="option14() " id="change14">23 May </button>
+      </div>
+
+      <div class="box">
+        <p> Cricket team consist of how many palyer ?</p>
+        <button onclick="option15()"  id="change15">11 Player</button>
+        <p style="text-align:center;">or</p>
+        <button onclick="option16() " id="change16">15 Player </button>
+      </div>
+
+      <div class="box">
+        <p> Which state share largest sea boundary in India ?</p>
+        <button onclick="option18()"  id="change18">Gujrat</button>
+        <p style="text-align:center;">or</p>
+        <button onclick="option17() " id="change17">Andra Pradesh </button>
+      </div>
+      <div class="box">
+        <p> What is the Capital of India ?</p>
+        <button onclick="option20()"  id="change20">Delhi</button>
+        <p style="text-align:center;">or</p>
+        <button onclick="option19() " id="change19">UP </button>
+      </div>
+     
+    </div>
+    {{>footer}}
+
+  </div>
+    
+
+    <script>
+        var a= document.getElementById("box1").style.background ="#f2f2f2";
+       // document.write(a);
+      //  document.getElementById("box3").removeEventListener("click", xyz);
+      //  function xyz(){
+      //      document.getElementById('box1');
+      //  }
+
+        function option1(){
+          //  alert("  wrong answer ");
+           document.getElementById("change1").style.background ="red";  
+        }
+        function option2(){
+            alert("write answer");
+            document.getElementById("change2").style.background ="green";
+        }
+
+        function option3(){
+            alert("  wrong answer ");
+           document.getElementById("change3").style.background ="red";  
+        }
+        function option4(){
+            alert("write answer");
+            document.getElementById("change4").style.background ="green";
+        }
+
+        function option6(){
+            alert("  wrong answer ");
+           document.getElementById("change6").style.background ="red";  
+        }
+        function option5(){
+            alert("write answer");
+            document.getElementById("change5").style.background ="green";
+        }
+
+        function option7(){
+            alert("  wrong answer ");
+           document.getElementById("change7").style.background ="red";  
+        }
+        function option8(){
+            alert("write answer");
+            document.getElementById("change8").style.background ="green";
+        }
+
+        function option9(){
+            alert("  wrong answer ");
+           document.getElementById("change9").style.background ="red";  
+        }
+        function option10(){
+            alert("write answer");
+            document.getElementById("change10").style.background ="green";
+        }
+
+        function option11(){
+            alert("  wrong answer ");
+           document.getElementById("change11").style.background ="red";  
+        }
+        function option12(){
+            alert("write answer");
+            document.getElementById("change12").style.background ="green";
+        }
+
+        function option14(){
+            alert("  wrong answer ");
+           document.getElementById("change14").style.background ="red";  
+        }
+        function option13(){
+            alert("write answer");
+            document.getElementById("change13").style.background ="green";
+        }
+
+        function option16(){
+            alert("  wrong answer ");
+           document.getElementById("change16").style.background ="red";  
+        }
+        function option15(){
+            alert("write answer");
+            document.getElementById("change15").style.background ="green";
+        }
+
+        function option17(){
+            alert("  wrong answer ");
+           document.getElementById("change17").style.background ="red";  
+        }
+        function option18(){
+            alert("write answer");
+            document.getElementById("change18").style.background ="green";
+        }
+
+        function option19(){
+            alert("  wrong answer ");
+           document.getElementById("change19").style.background ="red";  
+        }
+        function option20(){
+            alert("write answer");
+            document.getElementById("change20").style.background ="green";
+        }    
+
+    </script>
+</body>
+</html>

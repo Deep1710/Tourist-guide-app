@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+     nav {
+        width: 100%;
+        height: 15vh;
+         background: rgba(0, 0, 0, 0.2);
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: uppercase;
+    }
+
+    nav .logo {
+        width: 25%;
+        text-align: center;
+        /*background: red;*/
+    }
+
+     nav .menu {
+       width: 40%;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    nav .menu a {
+  width: 25%;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+    }
+
+    nav .menu a:first-child {
+         color: #00b894;
+    }
+    </style>
+</head>
+<body>
+     <nav>
+            <div class="logo"> <h1 > Mera bharat </h1> </div>
+            <div class="menu">
+                <a href="/mainpage" >Home</a>
+                <a href="http://localhost:3000/">gallery</a>
+                <a href="/registration" >registration</a>
+                <a href="#">login</a>
+            </div>
+        </nav>
+</body>
+</html>

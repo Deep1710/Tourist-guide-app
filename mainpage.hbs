@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .cont1{
+            display: grid;
+            grid-template-columns: auto;
+            border: 3px solid lightgray;
+            text-align: center;
+            background-color: #f2f2f2;
+            margin: 5px;
+          /*  animation: change 30s infinite ease-in-out;*/
+         
+        
+        }
+
+        .cont0{
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          padding: 5px;
+          border: 3px solid lightgray;
+            text-align: center;
+            background-color: #f2f2f2;
+            margin: 5px;
+          background-repeat: no-repeat;
+          background-position: center;
+          text-align: center;
+          background-size: cover;
+          justify-content: center;
+         /* animation: change 30s infinite ease-in-out;*/
+        }
+        .heda{
+          padding: 45px;
+          background-image: url(images/hed11.jpg);
+          animation: change 30s infinite ease-in-out;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        @keyframes change {
+      0% {
+        background-image: url(images/hed11.jpg);
+      }
+
+      20% {
+        background-image: url(images/hed21.jpg);
+      }
+
+      40% {
+        background-image: url(images/hed31.jpg);
+      }
+
+      60% {
+        background-image: url(images/hed41.jpg);
+      }
+
+      80% {
+        background-image: url(images/flag.jpg);
+      }
+
+      100% {
+        background-image: url(images/img1.jpg);
+      }
+    }
+        .hedb{
+          color: #f2f2f2;
+          font-size: 35px;
+          padding: 35px;
+          text-align: center;
+          background-image: url(images/hed21.jpg);
+          animation: change2 30s infinite ease-in-out;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        @keyframes change2 {
+      0% {
+        background-image: url(images/hed21.jpg);
+      }
+
+      20% {
+        background-image: url(images/hed22.jpg);
+      }
+
+      40% {
+        background-image: url(images/hed32.jpg);
+      }
+
+      60% {
+        background-image: url(images/hed42.jpg);
+      }
+
+      80% {
+        background-image: url(images/flag.jpg);
+      }
+
+      100% {
+        background-image: url(images/img1.jpg);
+      }
+    }
+        
+        .hedc{
+          background-image: url(images/hed31.jpg);
+          animation: change3 30s infinite ease-in-out;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        @keyframes change3 {
+      0% {
+        background-image: url(images/hed13.jpg);
+      }
+
+      20% {
+        background-image: url(images/hed23.jpg);
+      }
+
+      40% {
+        background-image: url(images/hed33.jpg);
+      }
+
+      60% {
+        background-image: url(images/hed43.jpg);
+      }
+
+      80% {
+        background-image: url(images/flag.jpg);
+      }
+
+      100% {
+        background-image: url(images/img1.jpg);
+      }
+    }
+        .cont3{
+          display: grid;
+          grid-template-columns: 5fr 2fr;
+          
+          border: 2px solid lightgray;
+          border-radius: 3px;
+          grid-column-gap: 5px;    
+        }
+        .item{
+          background-color: #f2f2f2;
+          border: 1px solid lightgray;
+          padding: 5px;
+          border-radius: 3px; 
+          margin: 3px;
+          background-image:url(images/flower.webp) ;
+          background-repeat: no-repeat;
+          background-size: cover;
+      
+        }
+
+        .item li{
+          border: 1px solid #aacdd3;
+          text-align: center;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          list-style-type: none;
+        }
+
+        .item ul{
+          margin-left: 0px;
+          padding-left: 0px;
+        }
+        li:hover{
+          font-size: large;
+          font-weight: 900;
+          color: chocolate;
+        }
+
+        .item h2{
+          text-align: center;
+        }
+
+         .big{
+             display: grid;
+            grid-template-columns: auto;
+            border: 3px solid lightgray;
+            background-color: #f2f2f2;
+        }
+
+    </style>
+</head>
+<body>
+  <div class="big">
+         {{>navbar}}
+     <div class="cont0">
+           <!-- <h1>India</h1> -->
+            <div class="heda"></div>
+            <div class="hedb"><h1> India </h1></div>
+            <div class="hedc"></div>
+        </div>
+        
+        <div class="cont2">
+
+        </div>
+        <div class="cont3">
+          <div class="item" >
+            <h1>About India</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore amet nulla facilis, autem, soluta assumenda quidem mollitia unde saepe eum enim officia atque. Saepe nobis veniam quae similique? Explicabo nulla cum nisi, minus aliquam accusamus, repellendus obcaecati quae, necessitatibus saepe totam dolore et voluptates enim temporibus ipsum ipsam quod quam.</p><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eligendi similique officia consectetur doloribus amet veniam quas assumenda laborum consequatur expedita, nulla nemo ipsam nostrum consequuntur iusto cumque doloremque sequi.</p>
+          </div>
+          <div class="item">
+            <h2>Section</h2>
+           
+          <ul>
+            <li><a href="/state">Indain State</a> </li>
+            <li><a href="/identity">National Identity</a></li>
+            <li><a href="/about">About India</a></li>
+            <li><a href="/quiz">Quiz</a></li>
+            
+          </ul>
+          </div> 
+        </div>
+
+        {{>footer}}
+
+        </div>
+</body>
+</html>

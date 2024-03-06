@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .cont1{
+            display: grid;
+            grid-template-columns: auto;
+            border: 3px solid lightgray;
+            text-align: center;
+            background-color: #f2f2f2;
+            margin: 5px;
+          /*  animation: change 30s infinite ease-in-out;*/
+        }
+
+        .cont5{
+            display: grid;
+           grid-template-columns:  repeat(auto-fill, minmax(200px, 1fr));
+            border: 3px solid lightgray;
+            text-align: center;
+            background-color: #f2f2f2;
+            margin: 5px;
+          /*  animation: change 30s infinite ease-in-out;*/
+        }
+
+         .box{
+          background-color: #f2f2f2; 
+          border: 3px solid lightgray;
+          padding: 5px;
+          border-radius: 3px; 
+          margin: 5px;
+         
+       }
+       #b1{
+        padding: 50px;
+         background-image: url(jk.jpg); 
+         background-size: cover;
+          justify-content: center; 
+       }
+       #b2{
+        padding: 50px;
+         background-image: url(hp.jpg);  
+         background-size: cover;
+          justify-content: center;
+       }
+       #b3{
+        padding: 50px;
+         background-image: url(pj.jpg);
+         background-size: cover;
+          justify-content: center;  
+       }
+       #b4{
+        padding: 50px;
+         background-image: url(hr.jpg); 
+         background-size: cover;
+          justify-content: center; 
+       }
+       #b5{
+        padding: 50px;
+         background-image: url(uk.jpg); 
+         background-size: cover;
+          justify-content: center; 
+       }
+       #b8{
+        padding: 50px;
+         background-image: url(mp.jpg); 
+         background-size: cover;
+          justify-content: center; 
+       }
+       #b9{
+        padding: 50px;
+         background-image: url(rj.jpg); 
+         background-size: cover;
+          justify-content: center; 
+       }
+       #b17{
+        padding: 50px;
+         background-image: url(mz.jpg); 
+         background-size: cover;
+          justify-content: center; 
+       }
+       #b19{
+        padding: 50px;
+         background-image: url(mg.jpg); 
+         background-size: cover;
+          justify-content: center; 
+       }
+       #b24{
+        padding: 50px;
+         background-image: url(mh.jpg); 
+         background-size: cover;
+          justify-content: center; 
+       }
+       #b28{
+        padding: 50px;
+         background-image: url(kr.jpg); 
+         background-size: cover;
+          justify-content: center; 
+       }
+       #b12{
+        padding: 50px;
+         background-image: url(sk.jpg); 
+         background-size: cover;
+          justify-content: center; 
+       }
+       #b18{
+        padding: 50px;
+         background-image: url(tr.jpg); 
+         background-size: cover;
+          justify-content: center; 
+       }
+       #b14{
+        padding: 50px;
+         background-image: url(ap.webp); 
+         background-size: cover;
+          justify-content: center; 
+       }
+       #b23{
+        padding: 50px;
+         background-image: url(gr.jpg); 
+         background-size: cover;
+          justify-content: center; 
+       }
+       #b6{
+        padding: 50px;
+         background-image: url(dl.jpg); 
+         background-size: cover;
+          justify-content: center; 
+       }
+       #b7{
+        padding: 50px;
+         background-image: url(up.jpg); 
+         background-size: cover;
+         justify-content: center; 
+       }
+      .big{
+         display: grid;
+         grid-template-columns: auto;
+         border: 3px solid lightgray;
+         background-color: #f2f2f2;
+      }
+    </style>
+</head>
+<body>
+   <div class="big">
+   {{>navbar}}
+
+    <div class="cont1">
+          <h1>State of India</h1>
+     </div>
+    <div class="cont5">
+        <div class="box" id="b1" >Jammu and Kashmir</div>
+        <div class="box" id="b2">Himachal Pardesh</div>
+        <div class="box" id="b3">Punjab</div>
+        <div class="box" id="b4">Haryana</div>
+        <div class="box" id="b5">Uttarakhand</div>
+        <div class="box" id="b6">Delhi</div>
+        <div class="box" id="b7"><a href="Uttar_Pradesh.html">Uttar_Pradesh</a></div>
+        <div class="box" id="b8">Madhya Pradesh</div>
+        <div class="box" id="b9">Rajasthan</div>
+        <div class="box" id="b10"><a href="Bihar"></a>"Bihar</div>
+        <div class="box" id="b11"><a href="West Bangal"></a>West Bangal</div>
+        <div class="box" id="b12"><a href="Sikkim">Sikkim</a></div>
+        <div class="box" id="b13"><a href="Assam">Assam</a></div>
+        <div class="box" id="b14"><a href="Arunachal Pradesh">Arunachal Pradesh</a></div>
+        <div class="box" id="b15"><a href="Nagaland">Nagaland</a></div>
+        <div class="box" id="b16"><a href="Manipur">Manipur</a></div>
+        <div class="box" id="b17"><a href="Mizoram">Mizoram</a></div>
+        <div class="box" id="b18"><a href="Tripura">Tripura</a></div>
+        <div class="box" id="b19"><a href="Meghalaya">Meghalaya</a></div>
+        <div class="box" id="b20"><a href="Jharkhand">Jharkhand</a></div>
+        <div class="box" id="b21"><a href="Odisha">Odisha</a></div>
+        <div class="box" id="b22"><a href="Chhattisgarh">Chhattisgarh</a></div>
+        <div class="box" id="b23"><a href="Gujarat">Gujarat</a></div>
+        <div class="box" id="b24"><a href="Maharashtra">Maharashtra</a></div>
+        <div class="box" id="b25"><a href="Teleagana">Teleagana</a></div>
+        <div class="box" id="b26"><a href="Andhra Pradesh">Andhra Pradesh</a></div>
+        <div class="box" id="b27"><a href="Goa">Goa</a></div>
+        <div class="box" id="b28"><a href="Kerla">Kerla</a></div>
+        <div class="box" id="b29"><a href="Tamil Nadu">Tamil Nadu</a></div>
+      </div>
+
+      {{>footer}}
+
+   </div>
+
+</body>
+</html>

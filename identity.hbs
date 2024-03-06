@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .cont1{
+            display: grid;
+            grid-template-columns: auto;
+            border: 3px solid lightgray;
+            text-align: center;
+            background-color: #f2f2f2;
+            margin: 5px;
+          /*  animation: change 30s infinite ease-in-out;*/
+         
+        
+        }
+
+         .cont8{
+            border: 3px solid lightgray;
+            text-align: center;
+            background-color: #f2f2f2;
+            margin: 5px;
+         }
+        .special{
+            background-color: lightskyblue;
+            padding: 15px;
+            color: whitesmoke;
+            text-align: center;
+        }
+         .moreText{
+          display: none;
+
+        }
+       .text.show-more .moreText{
+        display: inline;
+       }
+
+       .moreText1{
+          display: none;
+          font-size: 24px;
+          color: #94d619;
+          text-align: center;
+        }
+       .text1.show-more1 .moreText1{
+        display: inline;
+       }
+      .text{
+        display: grid;
+           grid-template-rows: auto;
+      }
+      #box{
+            float: right;
+            margin: 15px;
+            width: 250px;
+            height: 220px;
+            border-radius: 5px;
+            /*padding: 1em;*/
+            background-color: lightblue;
+        }  
+
+        .big{
+             display: grid;
+            grid-template-columns: auto;
+            border: 3px solid lightgray;
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="big">
+    {{>navbar}}
+    <div class="cont8">
+       <!--<h1 >National Flag</h1>-->
+      
+       <h1 class="special">National Flag</h1>
+       <img id="box" src="images/flag.jpg" alt="user_image">
+      <!-- <p class="text1">
+       <br><br>  <span class="moreText1"> -->
+        <br> National Anthem Lyrics <br>
+        Jana-gana-mana-adhinayaka jaya he <br>
+        Bharata-bhagya-vidhata <br>
+        
+        Punjaba-Sindhu-Gujarata-Maratha <br>
+        Dravida-Utkala-Banga <br>
+        Vindhya-Himachala-Yamuna-Ganga <br>
+        Uchchala-jaladhi-taranga <br>
+        
+        Tava shubha name jage, <br>
+        tava shubha asisa mage, <br>
+        
+        Gahe tava jaya-gatha. <br>
+        
+        Jana-gana-mangala-dayaka jaya he <br>
+        Bharata-bhagya-vidhata. <br>
+        
+        Jaya he, Jaya he, Jaya he, <br> Jaya jaya jaya, jaya he.
+        
+
+        <!--</span> -->
+        
+       <!-- <span> <br> <button class="read-more-btn1">Read More</button></span> -->
+       <br><br>
+    </p>
+      </div>
+
+      <div class="cont1">
+        <h1 class="special">National Anthem</h1>
+        <audio controls  >
+          <source src="http://web.archive.org/web/20041019023748/http://www.navyband.navy.mil/anthems/ANTHEMS/India.mp3 " type="audio/mp3">
+        </audio>
+      </div>
+      <div class="cont1">
+        <h1 class="special">National Motto </h1>
+        
+        <h2   style="text-align: centre; color: #94d619;"  >  सत्यमेव जयते <br> Satyameva Jayate (Thruth alone prevails)</h2>
+      </div>
+
+      {{>footer}}
+
+      </div>
+
+       <script  >
+    const readMoreBtn = document.querySelector('.read-more-btn');
+    const text = document.querySelector('.text');
+
+    readMoreBtn.addEventListener('click', (e)=>{
+      text.classList.toggle('show-more');
+      if(readMoreBtn.innerText === 'Read More'){
+        readMoreBtn.innerText = 'Read less';
+      }else{
+        readMoreBtn.innerText = 'Read More';
+      }
+    })
+
+    const readMoreBtn1 = document.querySelector('.read-more-btn1');
+    const text1 = document.querySelector('.text1');
+
+    readMoreBtn1.addEventListener('click',(e )=>{
+      text1.classList.toggle('show-more1');
+      if(readMoreBtn1.innerText === 'Read More'){
+        readMoreBtn1.innerText = 'Read less';
+      }else{
+        readMoreBtn1.innerText = 'Read More';
+      }
+    })
+    </script>
+</body>
+</html>
